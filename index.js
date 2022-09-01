@@ -3,7 +3,7 @@
 const canvas = document.querySelector('#etch-a-sketch');
 const ctx = canvas.getContext('2d');
 const shakebutton = document.querySelector('.shake');
-const MOVE_AMOUNT = 20;
+const MOVE_AMOUNT = 15;
 // Setup our canvas for drawing
 // make a variable called height and width from the same properties on our canvas.
 const { width, height } = canvas;
@@ -26,9 +26,9 @@ ctx.stroke();
 // write a draw function
 function draw({ key }) {
   // write a draw function
-  hue += 1;
+  hue += 10;
   console.log(hue);
-  ctx.strokeStyle = `hsl(${Math.random() * 360}, 100%, 50%)`;
+  ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
   console.log(key);
  // write a draw function
   ctx.beginPath();
