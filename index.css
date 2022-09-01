@@ -44,3 +44,16 @@ canvas.shake {
         transform: translate3d(4px, 0, 0);
     }
 }
+
+.Header {
+    color: aliceblue;
+    font-size: medium;
+    font-weight: bold;
+    padding-left: 3%;
+}
+
+.buttons {
+    font-family: serif;
+    font-size: medium;
+    font-weight: bold;
+}
